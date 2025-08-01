@@ -27,4 +27,9 @@ jobs:
         path_dockerfile: src/main/docker/Dockerfile.jvm
         image_name: ${{vars.DOCKERHUB_USERNAME}}/workstation-rack-module
         tag_name: v1
+    - uses: ./.github/actions/docker_push
+      with:
+        DOCKERHUB_TOKEN: ${{secrets.DOCKERHUB}}
+        DOCKERHUB_USERNAME: ${{vars.DOCKERHUB_USERNAME}}
+
 

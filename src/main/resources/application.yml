@@ -32,7 +32,7 @@ quarkus:
     migrate-at-start: true
     search-path:
       - "src/main/resources/db"
-    change-log: "changelog.xml"
+    change-log: "changeLog.xml"
 
   hibernate-orm:
     packages: com.ctw.workstation
